@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
- * is_divisible - Checks if a number is divisible.
- * @num: The number to be checked.
- * @div: The divisor.
- *
- * Return: If the number is divisible - 0.
- *         If the number is not divisible - 1.
+ * is_prime - recursively divide by higher divisor, skip even nums
+ * @n: number to check if prime
+ * @divisor: divisor
+ * Return: 1 if prime, 0 if not, or recursive function call
  */
 
 int is_prime(int n, int divisor)
@@ -20,10 +18,10 @@ return (is_prime(n, divisor + 1));
 }
 
 /**
-* is_prime_number - check if prime
-* @n: number to check
-* Return: 1 if prime, 0 if not
-*/
+ * is_prime_number - check if prime
+ * @n: number to check
+ * Return: 1 if prime, 0 if not
+ */
 
 int is_prime_number(int n)
 {
